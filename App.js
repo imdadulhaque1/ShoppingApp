@@ -1,16 +1,21 @@
-import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import Home from './components/screen/Home';
+import MyCart from './components/screen/MyCart';
+import ProductInfo from './components/screen/ProductInfo';
 
 const App = () => {
+  const Stack = createNativeStackNavigator();
   return (
-    <SafeAreaView>
-      <View>
-        <Text>Hello Native App</Text>
-      </View>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator screenOptions={{headerShown: false}}>
+        <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="MyCart" component={MyCart} />
+        <Stack.Screen name="Product " component={ProductInfo} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({});
