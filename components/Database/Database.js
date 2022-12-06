@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 export const COLOURS = {
   white: '#ffffff',
   black: '#000000',
@@ -35,7 +36,7 @@ export const Items = [
     description:
       'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex aliquam dolorem, doloremque ullam velit sint nulla quisquam adipisci enim accusantium dolore qui voluptate quia mollitia! Libero vel molestias hic maxime.',
     isOff: false,
-    productImage: require('../Database/Images/products/boat1'),
+    productImage: require('../Database/Images/products/boat1.png'),
     isAvailable: true,
     productImageList: [
       require('../Database/Images/products/boat1.png'),
