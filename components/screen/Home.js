@@ -38,6 +38,9 @@ const Home = () => {
           </View>
           <View style={styles.bodyView}>
             <Text style={styles.brandView}>Modern Shop &amp; Service</Text>
+            <Text style={styles.brandDetails}>
+              Audio Shop on Rustaveli Ave 57. {'/n'}This is shop offers both Products and Services
+            </Text>
           </View>
         </ScrollView>
       </View>
@@ -76,5 +79,12 @@ const styles = StyleSheet.create({
     fontWeight: '400',
     letterSpacing: 1,
     merginButton: 10,
+  },
+  brandDetails:{
+    fontSize: 14,
+    color: COLOURS.black,
+    fontWeight:'400',
+    letterSpacing: 1,
+    lineHeight: 20,
   },
 });
