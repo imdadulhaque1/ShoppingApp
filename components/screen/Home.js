@@ -42,6 +42,10 @@ const Home = () => {
               Audio Shop on Rustaveli Ave 57. {'/n'}This is shop offers both Products and Services
             </Text>
           </View>
+          <View style={{padding: 16}}>
+            <Text style={styles.productStyle}>Products</Text>
+            <Text style={styles.productNumber}>41</Text>
+          </View>
         </ScrollView>
       </View>
     </SafeAreaView>
@@ -87,4 +91,16 @@ const styles = StyleSheet.create({
     letterSpacing: 1,
     lineHeight: 20,
   },
+  productStyle:{
+    fontSize: 18,
+    color: COLOURS.black,
+    fontWeight:'500',
+    letterSpacing: 1,
+  },
+  productNumber:{
+    fontSize: 14,
+    color: COLOURS.black,
+    fontWeight: '400',
+    opacity: 0.5,
+  }
 });
